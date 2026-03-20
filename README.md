@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![ML](https://img.shields.io/badge/Machine%20Learning-KMeans-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 # HEPro AI+ 🚀
 
 ### A Smart Student Mentoring & Decision Intelligence System
