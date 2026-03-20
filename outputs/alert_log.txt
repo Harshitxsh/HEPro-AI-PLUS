@@ -1,0 +1,42 @@
+HEPro AI+ HIGH-RISK ALERT LOG
+==============================
+ALERT: Student S1008 – High Risk
+Reason: Extreme Stress (9) Detected
+Assigned Mentor: M005
+Priority: Immediate
+------------------------------
+ALERT: Student S1009 – High Risk
+Reason: Extreme Stress (10) Detected
+Assigned Mentor: M010
+Priority: Immediate
+------------------------------
+ALERT: Student S1011 – High Risk
+Reason: Extreme Stress (9) Detected
+Assigned Mentor: M005
+Priority: Immediate
+------------------------------
+ALERT: Student S1019 – High Risk
+Reason: Extreme Stress (9) Detected
+Assigned Mentor: M005
+Priority: Immediate
+------------------------------
+ALERT: Student S1034 – High Risk
+Reason: SRI (38.36) below threshold / Red Category
+Assigned Mentor: M010
+Priority: Immediate
+------------------------------
+ALERT: Student S1039 – High Risk
+Reason: Extreme Stress (9) Detected
+Assigned Mentor: M002
+Priority: Immediate
+------------------------------
+ALERT: Student S1041 – High Risk
+Reason: Extreme Stress (9) Detected
+Assigned Mentor: M009
+Priority: Immediate
+------------------------------
+ALERT: Student S1048 – High Risk
+Reason: Extreme Stress (9) Detected
+Assigned Mentor: M002
+Priority: Immediate
+------------------------------

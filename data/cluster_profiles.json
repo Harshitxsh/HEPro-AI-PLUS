@@ -1,0 +1,46 @@
+[
+    {
+        "cluster_id": 0,
+        "size": 11,
+        "avg_gpa": 5.12,
+        "avg_stress": 3.27,
+        "avg_sri": 58.49,
+        "avg_engagement": 69.09,
+        "avg_clarity": 3.36,
+        "avg_productivity": 6.18,
+        "label": "Career-Confused Underperformers"
+    },
+    {
+        "cluster_id": 1,
+        "size": 9,
+        "avg_gpa": 8.64,
+        "avg_stress": 7.44,
+        "avg_sri": 70.38,
+        "avg_engagement": 79.89,
+        "avg_clarity": 6.33,
+        "avg_productivity": 7.0,
+        "label": "High-Achieving but Stressed"
+    },
+    {
+        "cluster_id": 2,
+        "size": 16,
+        "avg_gpa": 6.39,
+        "avg_stress": 8.19,
+        "avg_sri": 50.23,
+        "avg_engagement": 70.06,
+        "avg_clarity": 4.88,
+        "avg_productivity": 3.94,
+        "label": "High-Risk Disengaged Students"
+    },
+    {
+        "cluster_id": 3,
+        "size": 14,
+        "avg_gpa": 7.66,
+        "avg_stress": 3.5,
+        "avg_sri": 68.74,
+        "avg_engagement": 79.79,
+        "avg_clarity": 6.64,
+        "avg_productivity": 3.79,
+        "label": "Stable & Balanced Students"
+    }
+]

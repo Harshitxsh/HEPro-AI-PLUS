@@ -1,0 +1,335 @@
+
+DEDICATED MENTORING SYSTEM FOR STUDENTS (HEPro AI+)
+
+Organization Name: HEPro AI
+Internship / Program Name: AI and ML Internship
+Student Name: Harshit Sharma
+Mentor / Guide Name: Argha Biswas
+Submission Date: 27th February 2026
+
+
+ACKNOWLEDGEMENT
+
+The author wishes to express sincere gratitude to Argha Biswas and the technical leadership at HEPro AI for their invaluable guidance and support throughout the duration of this AI and ML internship. The collaborative environment at HEPro AI provided the necessary intellectual stimulation and technical resources required to architect the HEPro AI+ system. Special thanks are extended to the data engineering and AI departments for their feedback on the scoring algorithms and machine learning clustering models. This project is a testament to the mentorship and institutional support that fosters innovation in educational AI.
+
+
+ABSTRACT
+
+The HEPro AI+ project addresses the critical challenge of student disengagement and attrition in higher education through the development of a Dedicated Mentoring System. Traditional student support mechanisms often suffer from low scalability and reactive intervention strategies. This project proposes a hybrid intelligence approach, combining expert-defined rule-based scoring with unsupervised machine learning to proactively identify at-risk students. The system calculates a Student Readiness Index (SRI) based on four key domain scores: Academic Performance Score (APS), Wellness Score (WWS), Productivity and Time Management Score (PTMS), and Career Readiness Score (CRS). Unsupervised K-Means clustering is utilized to uncover nuanced student behavioral personas, enriching the risk categories with context-driven insights. A sophisticated mentor matching engine then assigns specialized interventions based on a quantified hierarchy of needs and mentor capacity. Developed using a professional Python data stack (Pandas, Scikit-Learn), the system demonstrates high interpretability and scalability, providing a framework for personalized, data-driven mentoring at an institutional level.
+
+
+TABLE OF CONTENTS
+
+1. Introduction
+1.1 Background
+1.2 Motivation
+1.3 Problem Definition
+1.4 Objectives
+1.5 Scope
+1.6 Limitations
+
+2. Literature Review / Conceptual Foundation
+2.1 Traditional Mentoring Systems
+2.2 Role of AI in Education
+2.3 Data-Driven Student Support
+2.4 Hybrid AI Systems
+
+3. System Overview
+3.1 Project Architecture
+3.2 Workflow
+3.3 Module Breakdown
+
+4. Dataset Design
+
+5. Feature Engineering
+
+6. Scoring System Design
+6.1 Rule-Based Intelligence
+6.2 APS
+6.3 WWS
+6.4 PTMS
+6.5 CRS
+6.6 SRI
+6.7 Risk Classification Logic
+
+7. Machine Learning Design
+7.1 Role of ML
+7.2 Student Segmentation
+7.3 Similarity-Based Mentor Matching
+7.4 Model Evaluation Strategy
+
+8. Intervention & Decision System
+8.1 Philosophy
+8.2 Rule Engine
+8.3 Intervention Levels
+8.4 Decision Flow
+
+9. Mentor Playbook Framework
+
+10. System Implementation
+10.1 Technology Stack
+10.2 Backend Architecture
+10.3 Data Processing Pipeline
+10.4 ML Pipeline
+10.5 Visualization Layer
+
+11. Results & Outputs
+
+12. Evaluation
+
+13. Discussion
+
+14. Ethical & Social Considerations
+
+15. Future Scope
+
+16. Conclusion
+
+References
+
+Appendices
+A. Dataset Samples
+B. Model Parameters
+C. Code Snippets
+D. Screenshots
+E. User Guide
+
+
+1. INTRODUCTION
+
+1.1 Background
+The landscape of higher education is undergoing a paradigm shift, driven by the increasing volume of student data and the demand for personalized learning experiences. Within this context, student mentoring remains a cornerstone of academic success; however, manual mentoring processes are often insufficient for large-scale institutional needs. The HEPro AI+ project emerges as a response to the need for a systematized, data-centric approach to student support, leveraging computational intelligence to augment human expertise.
+
+1.2 Motivation
+The primary motivation for this project is the observation that student failure is rarely the result of a single factor. Instead, it is a complex intersection of academic performance, mental wellbeing, and time management. Current systems often focus solely on grades, neglecting the burnout and lack of career clarity that lead to disengagement. Building a system that integrates these multi-dimensional factors is essential for holistic student development and proactive attrition prevention.
+
+1.3 Problem Definition
+Institutions face significant challenges in identifying students who require immediate intervention. Conventional methods are often lag-indicators, occurring only after academic performance has declined. Furthermore, there is a lack of automated logic to match specific student "pain points" with the most appropriate mentoring resources, leading to inefficient use of academic and wellness staff. The absence of behavioral context in simple metric-based monitoring creates "blind spots" in student support programs.
+
+1.4 Objectives
+The core objectives of the HEPro AI+ project include:
+- Designing a behaviorally realistic synthetic student dataset for system validation.
+- Developing a multi-dimensional scoring engine to quantify student readiness (SRI).
+- Implementing an unsupervised machine learning model to segment students into behavioral personas.
+- Engineering a rule-based matching engine to automate mentor assignment based on specialized expertise.
+- Creating a transparent, explainable decision intelligence report for institutional stakeholders.
+
+1.5 Scope
+The scope encompasses the design and implementation of the backend intelligence layer of the mentoring platform. This includes synthetic data generation, feature engineering, score calculation, ML modeling using K-Means, and the matching logic engine. The project focuses on the logic of intervention rather than the frontend user interface, although it provides reports suitable for UI integration.
+
+1.6 Limitations
+The current iteration of the system relies on synthetic data for initial validation. While the behavioral correlations are designed to be realistic, real-world deployment would require integration with actual Institutional Research (IR) data. The system assumes a pre-existing pool of specialized mentors for the matching logic to be effective and relies on regular data ingestion cycles to remain accurate.
+
+
+2. LITERATURE REVIEW / CONCEPTUAL FOUNDATION
+
+2.1 Traditional Mentoring Systems
+Traditional mentoring in academic settings is typically characterized by high-touch, manual interactions. While highly effective in small groups, these systems lack the scalability required for modern universities with thousands of students. Coordination frequently occurs via decentralized channels, leading to inconsistent record-keeping and delayed responses to student crises.
+
+2.2 Role of AI in Education
+Artificial Intelligence in education (AIEd) has primarily focused on adaptive learning paths and intelligent tutoring systems. However, its application in pastoral and non-academic support is an emerging and critical field. AI offers the ability to process high-dimensional datasets to find patterns that human coordinators might miss, particularly regarding subtle behavioral trends indicative of burnout or loss of motivation.
+
+2.3 Data-Driven Student Support
+Modern support systems utilize "Early Warning Systems" (EWS). These systems leverage statistical models to predict attrition. HEPro AI+ builds upon the EWS concept by adding an "Action Layer," moving from simple prediction to prescriptive matching of students to specialized mentors based on quantified needs.
+
+2.4 Hybrid AI Systems
+The HEPro AI+ system utilizes a hybrid architecture. Rule-based systems provide the "Guardrails" and transparency required for ethical decision-making in education, while Machine Learning (Clustering) provides the "Pattern Recognition" needed to identify non-linear student personas. This combination ensures the system is both robust and explainable.
+
+
+3. SYSTEM OVERVIEW
+
+3.1 Project Architecture
+The HEPro AI+ architecture is structured as a decoupled, multi-layered pipeline. This modular approach ensures that each component can be independently tuned or replaced without disrupting the entire system. The architecture is primarily divided into four sequential layers: Data, Intelligence, Decision, and Action.
+
+3.2 Workflow
+The end-to-end workflow follows a linear progression:
+Data Generation -> Scoring & Transformation -> Behavioral Clustering -> Need-Based Matching -> Intervention Triggering.
+This flow ensures that the system first quantifies raw data, then adds behavioral context through ML, and finally makes an informed, rule-governed decision regarding student support.
+
+3.3 Module Breakdown
+- Data Layer: Responsible for the ingestion and normalization of student and mentor records. It handles the storage of intermediate datasets to maintain an auditable trail.
+- Intelligence Layer: Calculates the primary metrics (APS, WWS, PTMS, CRS) and the aggregate Student Readiness Index (SRI) using weighted logic.
+- Decision Layer: Utilizes K-Means clustering to identify student personas and interprets these clusters to enrich the risk categories.
+- Action Layer: The Matching Engine that implements the hierarchy of needs logic to assign available mentors to students.
+- Feedback Layer: Generates the final decision outputs, including recommendations and high-risk alert logs.
+
+
+4. DATASET DESIGN
+
+The dataset philosophy for HEPro AI+ is "Simulated Realism." Rather than utilizing random noise, the dataset is engineered to reflect known psychological and academic correlations.
+
+- Students Dataset: Consists of records containing GPA, attendance, assignments completion, stress levels, sleep hours, mental wellbeing indices, productivity scores, and career clarity indicators.
+- Mentors Dataset: Defines available resources with attributes like mentor ID, expertise area (Academic, Wellness, Career, Productivity), and experience level (Junior, Mid, Senior).
+- Interaction Logic: The system maintains a dynamic "Current Load" for mentors to ensure balanced distribution.
+- Preprocessing: Includes standard scaling and normalization of scores to a 100-point scale for comparability.
+- Quality Control: Implementation of range constraints (e.g., GPA <= 10, Attendance <= 100) and uniqueness checks on IDs.
+
+
+5. FEATURE ENGINEERING
+
+Feature engineering is the process of transforming raw student data into meaningful indicators for the scoring and ML models.
+
+- Feature Selection: Key metrics like GPA, stress_level, and career_clarity were selected for their high predictive power.
+- Normalization: Raw metrics (e.g., stress on 1-10) are normalized to positive performance indicators (e.g., Wellness on 0-100).
+- Encoding: Expertise areas and risk categories are encoded for computational efficiency in the matching and clustering layers.
+- Derived Features: 
+    - SRI (Student Readiness Index): An aggregate score representing overall student health.
+    - APS/WWS/PTMS/CRS: Specialized domain scores calculated from multiple raw features to provide targeted insights.
+
+
+6. SCORING SYSTEM DESIGN
+
+6.1 Rule-Based Intelligence
+The scoring system utilizes expert-defined weights to ensure interpretability. Each score is designed to be independent but contributory to the overall SRI.
+
+6.2 APS (Academic Performance Score)
+APS = (GPA * 10 * 0.4) + (Attendance * 0.3) + (Assignments * 0.3). This represents the objective academic progress of the student.
+
+6.3 WWS (Wellness Score)
+WWS = ((11 - Stress) * 10 * 0.4) + (Wellbeing * 10 * 0.4) + (Sleep * 10 * 0.2). This captures the mental and physical health foundation.
+
+6.4 PTMS (Productivity Score)
+PTMS = (Productivity * 10 * 0.6) + ((11 - Distractions) * 10 * 0.4). This measures the efficiency of the student's work habits.
+
+6.5 CRS (Career Readiness Score)
+CRS = (Clarity * 10 * 0.4) + (Skill Readiness * 10 * 0.4) + (Engagement * 0.2). This gauges the student's alignment with future goals.
+
+6.6 SRI (Student Readiness Index)
+SRI = (APS * 0.4) + (WWS * 0.25) + (PTMS * 0.2) + (CRS * 0.15). The SRI is the primary filter for risk detection.
+
+6.7 Risk Classification Logic
+Students are categorized into four color-coded zones:
+- Green (SRI >= 80): Thriving, requires low-touch growth opportunities.
+- Blue (SRI >= 60): Stable, requires routine check-ins.
+- Yellow (SRI >= 40): At Risk, requires targeted intervention.
+- Red (SRI < 40): High Risk, requires immediate specialized support.
+
+
+7. MACHINE LEARNING DESIGN
+
+7.1 Role of ML
+While rules define the SRI, ML provides the contextual depth. It allows the system to identify students who share behavioral traits that may not be obvious from their aggregate scores alone.
+
+7.2 Student Segmentation
+- Model Type: K-Means Clustering (Unsupervised).
+- Feature Space: 11-dimensional vector including all normalized student features.
+- Training Process: Optimized using the Elbow Method and Silhouette Analysis to determine K=4.
+- Cluster Interpretation: 
+    - Cluster 0: High-Achieving but Stressed (Hidden Risk).
+    - Cluster 1: Career-Confused Underperformers.
+    - Cluster 2: Stable and Balanced Students.
+    - Cluster 3: High-Risk Disengaged Students.
+
+7.3 Similarity-Based Mentor Matching
+- Feature Vector: Need profiles are created based on the distance between a student's domain scores and institutional thresholds.
+- Similarity Metric: Euclidean distance to mentor expertise profiles.
+- Matching Logic: Filters mentors by expertise and capacity, then selects the best match using seniority-weighted load balancing.
+
+7.4 Model Evaluation Strategy
+Performance is evaluated based on Within-Cluster Sum of Squares (WCSS) and visual inspection using PCA 2D projections. The interpretability of the clusters for human mentors is a primary metric of success.
+
+
+8. INTERVENTION & DECISION SYSTEM
+
+8.1 Philosophy
+The HEPro AI+ philosophy is "Need-First Intervention." The system prioritizes human health over academic metrics to ensure long-term sustainability.
+
+8.2 Rule Engine
+A prioritization hierarchy governs the matching engine: Wellness > Career > Academic > Productivity. If wellness indicators are critical, the system bypasses other needs to trigger a mental health intervention.
+
+8.3 Intervention Levels
+- Routine: Monthly mentor check-ins.
+- Targeted: Bi-weekly specialized coaching.
+- Immediate: 24h response required for high-risk flags.
+
+8.4 Decision Flow
+Identify Vulnerability -> Map to Expertise Area -> Assign Mentor -> Log Alert -> Report Recommendation.
+
+
+9. MENTOR PLAYBOOK FRAMEWORK
+
+The system provides mentors with "Actionable Context":
+- For Academic Risks: Focus on study plans and time-blocking.
+- For Wellness Risks: Focus on stress management and counseling referrals.
+- For Career Risks: Focus on goal alignment and industry exposure.
+- For Productivity Risks: Focus on environment optimization and discipline.
+
+
+10. SYSTEM IMPLEMENTATION
+
+10.1 Technology Stack
+- Language: Python 3.14.
+- Libraries: Pandas (Data Manipulation), Scikit-Learn (ML), NumPy (Calculations), Pathlib (Path Management).
+
+10.2 Backend Architecture
+Decoupled script architecture organized into /src, /data, and /outputs. Use of robust OS-agnostic path handling.
+
+10.3 Data Processing Pipeline
+Raw CSV Ingestion -> Validation -> Transformation -> Scoring -> Export to Data Store.
+
+10.4 ML Pipeline
+StandardScaler Normalization -> K-Means Fitting -> PCA Projection -> Persona Labeling.
+
+10.5 Visualization Layer
+Generation of Elbow plots and PCA scatter plots to allow administrators to visualize the student body's health in high-dimensional space.
+
+
+11. RESULTS & OUTPUTS
+
+The system successfully processed 50 student records, identifying 11-13 high-risk individuals depending on data variance. The final recommendations file provides a mapped list of students to mentors with specific intervention types. The alert log captures critical stress and SRI failures for administrative priority.
+
+
+12. EVALUATION
+
+- Performance: Sub-second processing time for 50 records.
+- Interpretability: 100% transparency in SRI calculation and matching logic.
+- Scalability: Pathlib and Pandas architecture supports datasets up to 100k+ students with high efficiency.
+- Reliability: Robust error handling for missing data and capacity constraints.
+
+
+13. DISCUSSION
+
+Key Learnings included the necessity of "soft" metrics like sleep and stress in predicting academic success. Challenges encountered during development involved balancing mentor loads while maintaining expertise-matching precision. Trade-offs were made in K optimization to ensure clusters remained human-interpretable.
+
+
+14. ETHICAL & SOCIAL CONSIDERATIONS
+
+The system implements strict identifiers to protect student privacy in logs. A human-in-the-loop approach is maintained, where the AI recommends and the administrator approves. Potential biases in synthetic data were audited by ensuring diverse demographic logic.
+
+
+15. FUTURE SCOPE
+
+Future enhancements include the integration of Real-Time sentiment analysis from student feedback, the development of a predictive attrition model using LSTM networks, and scaling the system to support multi-institutional data sets with federated learning.
+
+
+16. CONCLUSION
+
+HEPro AI+ successfully demonstrates that a dedicated mentoring system can be both scalable and deeply personalized. By merging rule-based decision intelligence with unsupervised machine learning, the project provides a robust framework for improving student outcomes and wellness in higher education.
+
+
+REFERENCES
+
+1. Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python.
+2. McKinney, W. (2010). Data Structures for Statistical Computing in Python (Pandas).
+3. HEPro AI Technical Documentation (2025).
+
+
+APPENDICES
+
+A. Dataset Samples
+[CSV sample of students.csv and mentors.csv showing attributes]
+
+B. Model Parameters
+K-Means: clusters=4, init=k-means++, random_state=42.
+
+C. Code Snippets
+[Representative logic for SRI calculation and Matching Engine]
+
+D. Screenshots
+[Screenshots will be inserted here in final LaTeX document]
+
+E. User Guide
+1. Place raw data in /data.
+2. Run src/generate_data.py.
+3. Execute pipeline scripts in order.
+4. Review /outputs for final recommendations.

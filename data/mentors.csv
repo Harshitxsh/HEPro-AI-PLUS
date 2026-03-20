@@ -1,0 +1,13 @@
+mentor_id,mentor_name,expertise_area,specialization,experience_level,max_students,current_load,availability_status
+M001,Dr. Anjali Verma,Wellness,Stress Counseling,Senior,5,0,Available
+M002,Prof. Raj Singh,Academic,Engineering Maths,Senior,5,0,Available
+M003,Sneha Kapoor,Career,IT Placements,Mid,8,0,Available
+M004,Vikram Malhotra,Productivity,Time Management,Mid,8,0,Available
+M005,Dr. Karan Mehra,Wellness,Mental Health,Senior,5,0,Available
+M006,Priya Sharma,Academic,Business Analytics,Mid,10,0,Available
+M007,Amit Ghosh,Career,Soft Skills & HR,Mid,8,0,Available
+M008,Sanjay Dutt,Productivity,Deep Work Strategies,Junior,12,0,Available
+M009,Rohan Joshi,Academic,Computer Science,Senior,5,0,Available
+M010,Kavita Iyer,Wellness,Holistic Wellbeing,Mid,8,0,Available
+M011,Suresh Prabhu,Career,Engineering Careers,Senior,5,0,Available
+M012,Neha Batra,Productivity,Agile Learning,Junior,12,0,Available

@@ -1,0 +1,51 @@
+student_id,cluster,SRI,category,assigned_mentor_id,mentor_type,intervention_type,priority,alert_flag
+S1001,Career-Confused Underperformers,69.87,Blue,M003,Career,Career Coaching,Medium,False
+S1002,High-Risk Disengaged Students,54.96,Yellow,M001,Wellness,Stress Counseling,Immediate,True
+S1003,High-Risk Disengaged Students,42.76,Yellow,M005,Wellness,Stress Counseling,Immediate,True
+S1004,Career-Confused Underperformers,67.7,Blue,M007,Career,Career Coaching,Medium,False
+S1005,High-Risk Disengaged Students,45.12,Yellow,M010,Wellness,Stress Counseling,Immediate,True
+S1006,High-Risk Disengaged Students,56.6,Yellow,M004,Productivity,Productivity Coaching,Medium,False
+S1007,Career-Confused Underperformers,69.0,Blue,M011,Career,Career Coaching,Medium,False
+S1008,High-Risk Disengaged Students,39.47,Red,M001,Wellness,Stress Counseling,Immediate,True
+S1009,High-Risk Disengaged Students,43.15,Yellow,M005,Wellness,Stress Counseling,Immediate,True
+S1010,High-Risk Disengaged Students,77.11,Blue,M008,Productivity,Productivity Coaching,Medium,False
+S1011,Career-Confused Underperformers,74.4,Blue,M003,Career,Career Coaching,Medium,False
+S1012,High-Risk Disengaged Students,48.56,Yellow,M010,Wellness,Stress Counseling,High,False
+S1013,High-Risk Disengaged Students,54.8,Yellow,M012,Productivity,Productivity Coaching,Medium,False
+S1014,High-Risk Disengaged Students,44.51,Yellow,M001,Wellness,Stress Counseling,Immediate,True
+S1015,High-Risk Disengaged Students,52.71,Yellow,M004,Productivity,Productivity Coaching,Medium,False
+S1016,High-Risk Disengaged Students,76.55,Blue,M008,Productivity,Efficiency Coaching,Low,False
+S1017,High-Risk Disengaged Students,67.24,Blue,M005,Wellness,Wellness Check-in,Low,False
+S1018,High-Risk Disengaged Students,54.83,Yellow,M010,Wellness,Stress Counseling,Immediate,True
+S1019,High-Risk Disengaged Students,58.07,Yellow,M007,Career,Goal Setting,Low,False
+S1020,High-Risk Disengaged Students,84.8,Green,M012,Productivity,Leadership & Growth,Low,False
+S1021,High-Risk Disengaged Students,60.22,Blue,M004,Productivity,Efficiency Coaching,Low,False
+S1022,High-Risk Disengaged Students,45.44,Yellow,M008,Productivity,Productivity Coaching,Medium,False
+S1023,High-Risk Disengaged Students,60.73,Blue,M012,Productivity,Productivity Coaching,Medium,False
+S1024,High-Risk Disengaged Students,46.44,Yellow,M002,Academic,Academic Tutoring,High,False
+S1025,High-Risk Disengaged Students,67.25,Blue,M004,Productivity,Efficiency Coaching,Low,False
+S1026,High-Risk Disengaged Students,60.7,Blue,M008,Productivity,Productivity Coaching,Medium,False
+S1027,High-Risk Disengaged Students,61.26,Blue,M001,Wellness,Stress Counseling,Immediate,True
+S1028,High-Risk Disengaged Students,48.24,Yellow,M011,Career,Career Coaching,Medium,False
+S1029,High-Risk Disengaged Students,56.6,Yellow,M006,Academic,Academic Tutoring,High,False
+S1030,High-Risk Disengaged Students,60.44,Blue,M012,Productivity,Productivity Coaching,Medium,False
+S1031,High-Risk Disengaged Students,63.89,Blue,M004,Productivity,Productivity Coaching,Medium,False
+S1032,High-Risk Disengaged Students,48.29,Yellow,M009,Academic,Academic Tutoring,High,False
+S1033,High-Risk Disengaged Students,62.96,Blue,M008,Productivity,Productivity Coaching,Medium,False
+S1034,High-Risk Disengaged Students,52.34,Yellow,M012,Productivity,Productivity Coaching,Medium,False
+S1035,High-Risk Disengaged Students,68.98,Blue,M004,Productivity,Productivity Coaching,Medium,False
+S1036,High-Risk Disengaged Students,39.77,Red,M005,Wellness,Stress Counseling,Immediate,True
+S1037,High-Risk Disengaged Students,76.32,Blue,M008,Productivity,Efficiency Coaching,Low,False
+S1038,High-Risk Disengaged Students,41.28,Yellow,M010,Wellness,Stress Counseling,Immediate,True
+S1039,Career-Confused Underperformers,61.55,Blue,M003,Career,Career Coaching,Medium,False
+S1040,Career-Confused Underperformers,65.96,Blue,M007,Career,Career Coaching,Medium,False
+S1041,High-Risk Disengaged Students,52.46,Yellow,M012,Productivity,Productivity Coaching,Medium,False
+S1042,High-Risk Disengaged Students,63.4,Blue,M004,Productivity,Productivity Coaching,Medium,False
+S1043,High-Risk Disengaged Students,74.76,Blue,M008,Productivity,Productivity Coaching,Medium,False
+S1044,High-Risk Disengaged Students,39.17,Red,M001,Wellness,Stress Counseling,Immediate,True
+S1045,High-Risk Disengaged Students,70.63,Blue,M005,Wellness,Wellness Check-in,Low,False
+S1046,High-Risk Disengaged Students,42.95,Yellow,M010,Wellness,Stress Counseling,Immediate,True
+S1047,High-Risk Disengaged Students,67.41,Blue,M010,Wellness,Stress Counseling,Medium,False
+S1048,High-Risk Disengaged Students,55.9,Yellow,M012,Productivity,Productivity Coaching,Medium,False
+S1049,High-Risk Disengaged Students,71.68,Blue,M004,Productivity,Productivity Coaching,Medium,False
+S1050,High-Risk Disengaged Students,67.43,Blue,M008,Productivity,Productivity Coaching,Medium,False
