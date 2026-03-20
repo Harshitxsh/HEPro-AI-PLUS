@@ -213,11 +213,13 @@ final_recommendations.csv + alert_log.txt
 
 ---
 
-## ⭐ If you like this project, consider giving it a star!
-
 # 👨‍💻 Author
 
 Developer: **Harshit Sharma | [LinkedIn Profile](https://www.linkedin.com/in/harshit-sharma-b700b2353/)**
 
 HEPro AI+ is not just about analyzing students —
 it’s about **helping them at the right time, in the right way, by the right person**.
+
+---
+
+## ⭐ If you like this project, consider giving it a star!
