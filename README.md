@@ -165,6 +165,11 @@ These outputs demonstrate how HEPro AI+ transforms raw student data into actiona
 ```text
 HEPro-AI-Plus/
 │
+├── assets/                    # Output screenshots
+│   ├── final_recommendations_output.png
+│   ├── alert.png
+│   └── pca_cluster_visualization.png
+|
 ├── data/                   # Input & processed datasets
 │   ├── students.csv
 │   ├── students_scored.csv
