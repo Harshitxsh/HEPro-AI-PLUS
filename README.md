@@ -155,7 +155,7 @@ These outputs demonstrate how HEPro AI+ transforms raw student data into actiona
 ### 🔹 High-Risk Alert Log
 ![Alert Log](assets/alert_log.png)
 
-### 🔹 Cluster Visualization (Optional)
+### 🔹 Cluster Visualization
 ![Clusters](assets/pca_cluster_visualization.png)
 
 ---
